@@ -12,7 +12,6 @@ fileInput.addEventListener("change", function () {
   const file = fileInput.files[0];
 
   if (!file) return;
-
   if (!file.type.startsWith("image/")) {
     alert("Solo se permiten imágenes.");
     fileInput.value = "";
