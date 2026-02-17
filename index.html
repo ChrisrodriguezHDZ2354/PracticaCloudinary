@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Subida de Imagen - Cloudinary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Subir Imagen</h1>
+
+    <input type="file" id="fileInput" accept="image/*">
+    
+    <button id="uploadBtn">Subir</button>
+
+    <p id="status"></p>
+
+    <div id="previewContainer">
+      <img id="previewImage" />
+      <div id="urlContainer" style="display:none;">
+  <p>URL de la imagen:</p>
+  <input type="text" id="imageUrl" readonly>
+  <button id="copyBtn">Copiar URL</button>
+</div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
